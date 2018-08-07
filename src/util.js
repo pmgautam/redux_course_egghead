@@ -9,5 +9,7 @@ export const getVisibleTodos = (
             return todos.filter(todo => todo.completed)
         case 'SHOW_ACTIVE':
             return todos.filter(todo => !todo.completed)
+        default:
+            return todos
     }
 }

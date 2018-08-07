@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {toggleTodo} from "../actions";
 import Todo from "../components/Todo";
-import {getVisibleTodos} from "../reducers/visible_todos_reducer";
+import {getVisibleTodos} from "../util";
 
 const TodoList = (props) => {
     const todos = props.todos
